@@ -1,0 +1,141 @@
+---
+title: "title"
+author: "alikat"
+date: "2024-09-03"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Set up a vector named age
+```{r}
+age=c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29, 35, 31, 27, 22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 42, 53, 41, 51, 35, 24, 33, 41)
+```
+# a.How many data points?
+
+```{r}
+length(age)
+```
+# 34 data points
+
+# 2.Find the reciprocal of the values for age.
+```{r}
+reciprocal <- 1/age
+print (reciprocal)
+```
+# 3. Assign also new_age <- c(age, 0, age).
+```{r}
+new_age <- c(age, 0, age)
+print (new_age)
+```
+# The values of the new_age has the same values with the age.
+
+# 4. Sort the values for age.
+```{r}
+sort(age)
+```
+# 5. Find the minimum and maximum value for age.
+```{r}
+min(age)
+max(age)
+```
+# 17 is the minimum
+# 57 is the maximum
+
+# 6. Set up a vector named data.
+```{r}
+data <- c(2.4, 2.8, 2.1, 2.5, 2.4, 2.2, 2.5, 2.3, 2.5, 2.3, 2.4, 2.7)
+```
+# a.How many data points?
+```{r}
+length(data)
+```
+# 12 data points
+
+# 7. What happen to the data?
+
+```{r}
+new_vector <- data
+data * 2
+```
+# the data vector results in a new vector where each element is twice the original value.
+
+# 8.1. Integers from 1 to 100.
+```{r}
+m <- seq(1:100)
+print(m)
+```
+# 8.2. Numbers from 20 to 60
+```{r}
+a <- seq(20,60)
+print(a)
+```
+# 8.3. Mean of numbers from 20 to 60
+```{r}
+r <- mean(20,60)
+print(r)
+```
+# 8.4. Sum of numbers from 51 to 91
+```{r}
+i <- sum(51:91)
+print(i)
+```
+# 8.5. Integers from 1 to 1,000
+```{r}
+e <- seq(1:1000)
+print(e)
+```
+# a. How many data points from 8.1 to 8.4?
+```{r}
+length1 <- length(m)
+length2 <- length(a)
+length3 <- length(r)
+length4 <- length(i)
+sum(length1+length2+length3+length4)
+```
+# 143 data points from 8.1 to 8.4.
+
+# b.
+```{r}
+m <- seq(1:100)
+a <- seq(20,60)
+r <- mean(20,60)
+i <- sum(51:91)
+```
+
+# c. For 8.5 find only maximum data points until 10.
+```{r}
+e <- 1:1000
+answer <- max(e[e <- 10])
+answer
+```
+
+# 9. Vector
+```{r}
+Filter(function(i) { all(i %% c(3,5,7) != 0) }, seq(100))
+```
+
+# 10. Generate a sequence backwards of the integers from 1 to 100.
+```{r}
+rev(seq(1:100))
+```
+
+# 11. Multiples
+```{r}
+upper_limit <- 25
+num <- 1:(upper_limit - 1)
+multiples <- num[num %% 3 == 0 | num %% 5 == 0]
+multiples
+```
+
+# a. How many data points from 10 and 11.
+```{r}
+length(multiples)
+```
+
+# 11 data points from 10 and 11.
+
+b.
+
